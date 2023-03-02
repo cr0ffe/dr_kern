@@ -18,4 +18,5 @@ def create_corpus(output_file='/Users/zulDrak/Documents/GitHub/dr_kern/corpus_fo
                     corpus.append(text)
     with open(output_file, 'w') as file:
         file.write('\n'.join(corpus))
+        file.write('\n')  # add newline character at end of file
     return corpus
