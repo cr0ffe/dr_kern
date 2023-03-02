@@ -9,7 +9,7 @@ def preprocess_text(text):
 
 def create_corpus(output_file='/Users/zulDrak/Documents/corpus_output/corpus_for_drkern.txt'):
     corpus = []
-    playbook_dir = '/Users/zulDrak/Documents/GitHub/SentryWire_xSOAR'
+    playbook_dir = '/Users/zulDrak/Documents/corpus_output/'
     for filename in os.listdir(playbook_dir):
         if filename.endswith('.py'):
             with open(os.path.join(playbook_dir, filename), 'r') as file:
