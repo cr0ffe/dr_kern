@@ -7,7 +7,7 @@ def preprocess_text(text):
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-def create_corpus(output_file='/Users/zulDrak/Documents/GitHub/dr_kern/corpus_for_drkern.txt'):
+def create_corpus(output_file='/Users/zulDrak/Documents/corpus_output/corpus_for_drkern.txt'):
     corpus = []
     playbook_dir = '/Users/zulDrak/Documents/GitHub/SentryWire_xSOAR'
     for filename in os.listdir(playbook_dir):
